@@ -1,0 +1,18 @@
+<div class="post-meta">
+  <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+  <% if(post.categories.length) { %>
+  <span class="post-meta-split">|</span>
+  <span class="post-meta-category">
+    <% post.categories.each(function(cate){%>
+    <a href="<%- url_for(cate.path) %>"><%- cate.name %></a>
+    <% }) %></span
+  >
+  <% } %> <% if(post.tags.length) { %>
+  <span class="post-meta-split">|</span>
+  <span class="post-meta-tag">
+    <% post.tags.each(function(tag){%>
+    <a href="<%- url_for(tag.path) %>"><%- tag.name %></a>
+    <% }) %>
+  </span>
+  <% } %>
+</div>

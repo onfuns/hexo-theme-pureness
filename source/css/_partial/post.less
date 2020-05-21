@@ -1,0 +1,54 @@
+.post {
+  margin: 1em auto;
+  padding: 20px 0px;
+  background-color: #fff;
+}
+
+.posts {
+  .post:first-child {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  .post {
+    border-top: 2px dashed #bababa;
+  }
+
+  .post-title {
+    font-size: 1.5em;
+    .post-title-link {
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        border-bottom: 1px solid @a-color-50;
+        color: @a-color-50;
+      }
+    }
+  }
+
+  .more {
+    display: inline-block;
+    padding: 0 0.6rem;
+    height: 1.6rem;
+    background: @base-color;
+    color: @a-color;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: @a-hover-color;
+    }
+  }
+}
+
+.post-meta {
+  color: #999;
+  font-size: 12px;
+  a {
+    color: inherit;
+  }
+  &-split {
+    margin: 0 2px;
+  }
+}

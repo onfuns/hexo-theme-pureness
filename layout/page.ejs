@@ -1,0 +1,9 @@
+<% if(page.type === 'categories'){ %>
+<div class="category-all">
+  <%- list_categories() %>
+</div>
+<%} else if(page.type === 'tags') {%>
+<div class="tag-all">
+  <%- list_tags() %>
+</div>
+<%}%>

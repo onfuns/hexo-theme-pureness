@@ -1,0 +1,27 @@
+<section class="posts">
+  <% page.posts.each(function (post) { %>
+  <article class="post">
+    <div class="post-title">
+      <a class="post-title-link" href="<%- url_for(post.path) %>"
+        ><%= post.title %></a
+      >
+    </div>
+    <%- partial('_partial/post-meta',{ post:post }) %>
+    <div class="post-content">
+      <% if(post.excerpt) {%>
+      <span><%- post.excerpt %></span>
+      <%} else { if(theme.excerpt.enable){ %>
+      <span><%- post.content.substring(0, theme.excerpt.length) %></span>
+      <% }} %>
+    </div>
+    <% if(post.excerpt) { %>
+    <div>
+      <a class="more" href="<%- url_for(post.path) %>">
+        <%- __('Post.more') %></a
+      >
+    </div>
+    <% } %>
+  </article>
+  <% }) %>
+</section>
+<%- partial('_partial/paginator') %>

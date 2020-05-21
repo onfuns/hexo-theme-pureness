@@ -1,0 +1,9 @@
+<article class="post">
+  <div class="post-title">
+    <h2 class="title"><%= page.title %></h2>
+  </div>
+  <%- partial('_partial/post-meta',{ post:page }) %>
+  <div class="post-content">
+    <%- page.content %>
+  </div>
+</article>

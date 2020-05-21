@@ -1,0 +1,28 @@
+.tag-info,
+.tag-all {
+  padding: 60px 0;
+}
+
+.tag-all {
+  .tag-list {
+    &-item {
+      list-style: circle;
+      margin-bottom: 5px;
+      a {
+        border-bottom: 1px solid @a-color-50;
+        display: inline-block;
+        line-height: 1.5;
+      }
+    }
+    &-count {
+      margin-left: 5px;
+      color: @a-color-50;
+      &::before {
+        content: "(";
+      }
+      &::after {
+        content: ")";
+      }
+    }
+  }
+}

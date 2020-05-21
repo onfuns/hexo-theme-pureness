@@ -1,0 +1,43 @@
+.header {
+  background-color: #000;
+  height: 2rem;
+  display: flex;
+
+  &-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  &-title {
+    &-logo {
+      color: #fff;
+      font-size: 1rem;
+      font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
+      text-decoration: none;
+    }
+  }
+
+  .header-menu {
+    margin: 0;
+    padding: 0;
+
+    &-item {
+      display: inline-block;
+      margin-right: 0.5rem;
+      & > a {
+        font-family: Georgia, Cambria, Times New Roman, Times, serif;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          color: @base-color;
+        }
+      }
+    }
+  }
+}

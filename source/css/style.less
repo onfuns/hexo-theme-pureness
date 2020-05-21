@@ -1,0 +1,87 @@
+@import "var";
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 20px;
+}
+body {
+  color: #4c4948;
+  font-size: 14px;
+  line-height: 2;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body,
+pre,
+figure,
+code,
+tr,
+td {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin: 0.2rem 0;
+  color: @h-color;
+  font-weight: bold;
+}
+
+pre,
+code {
+  line-height: 1.5;
+}
+
+a {
+  color: @a-color;
+  text-decoration: none;
+  &:hover {
+    color: @a-color-50;
+  }
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 0.6rem;
+  border-left: 0.2rem solid #dfe2e5;
+  color: #6a737d;
+}
+
+.container {
+  height: 100%;
+  code {
+    padding: 0.1rem 0.2rem;
+    background: rgba(27, 31, 35, 0.05);
+    word-wrap: break-word;
+    font-size: 14px;
+  }
+
+  .main {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: calc(~"100% - 8.2rem");
+  }
+}
+
+@import "_partial/header";
+@import "_partial/post";
+@import "_partial/post-list";
+@import "_partial/archive";
+@import "_partial/category";
+@import "_partial/tag";
+@import "_partial/paginator";
+/* @import "plugins/github-gist"; */
+@import "plugins/atom-one-dark";
+@import "_partial/footer";

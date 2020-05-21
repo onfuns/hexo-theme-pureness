@@ -1,0 +1,18 @@
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+
+excerpt:
+  enable: true
+  length: 150
+
+footer:
+  since: 2015
+  ICP:
+    url: http://www.beian.miit.gov.cn
+    text: 浙ICP备 XXXXX-1
+
+baidu_analysis:
+google_analysis:

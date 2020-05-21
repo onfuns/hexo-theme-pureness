@@ -1,0 +1,22 @@
+<footer class="footer">
+  <div class="footer-content">
+    <div class="copyright">
+      ©<%- theme.footer.since %> - <%- new Date().getFullYear() %> By <%-
+      config.author %>
+    </div>
+    <div class="framework-info">
+      <span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a
+      ><span class="footer-separator">&nbsp;|&nbsp;</span><span>主题 - </span
+      ><a href="https://github.com/onfuns/hexo-theme-pureness"
+        ><span>pureness</span></a
+      >
+    </div>
+    <% if(theme.footer.ICP.text){ %>
+    <div class="footer_icp">
+      <a href="<%- theme.footer.ICP.url %>" target="_blank"
+        ><%- theme.footer.ICP.text %></a
+      >
+    </div>
+    <% } %>
+  </div>
+</footer>

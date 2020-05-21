@@ -1,0 +1,17 @@
+<ul class="post-list-no-des">
+  <% var list = page.posts.toArray();list.forEach(function (post,index) { %>
+  <div>
+    <% if(index=== 0 || (post && list[index - 1] && date(post.date, "YYYY") !==
+    date(list[index - 1].date, "YYYY"))){ %>
+    <h2><%- date(post.date, "YYYY") %></h2>
+    <% }%>
+  </div>
+  <li class="post-list-no-des-item">
+    <span class="post-list-no-des-item-date"
+      ><%- date(post.date, "MM-DD") %></span
+    >
+    <a class="post-title" href="<%- url_for(post.path) %>"><%- post.title %></a>
+  </li>
+  <% }) %>
+</ul>
+<script></script>
