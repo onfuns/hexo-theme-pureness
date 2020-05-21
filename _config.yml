@@ -8,6 +8,8 @@ excerpt:
   enable: true
   length: 150
 
+logo:
+
 footer:
   since: 2015
   ICP:
