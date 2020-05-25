@@ -6,6 +6,7 @@ html {
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 20px;
 }
+
 body {
   color: @font-color;
   font-size: 14px;
@@ -36,8 +37,12 @@ h6 {
   position: relative;
   margin: 0;
   color: @font-color;
-  font-weight: bold;
 }
+
+h1 {
+  font-size: 2em;
+}
+
 
 pre,
 code {
@@ -47,6 +52,7 @@ code {
 a {
   color: @a-color;
   text-decoration: none;
+
   &:hover {
     color: @a-color-50;
   }
@@ -61,6 +67,7 @@ blockquote {
 
 .container {
   height: 100%;
+
   code {
     padding: 0.1rem 0.2rem;
     background: rgba(27, 31, 35, 0.05);
