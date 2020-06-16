@@ -43,6 +43,19 @@ h1 {
   font-size: 2em;
 }
 
+hr {
+  margin: 20px 0;
+  height: 2px;
+  border: none;
+  background-color: #ddd;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #fff,
+    #fff 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
 
 pre,
 code {
@@ -76,7 +89,7 @@ blockquote {
   }
 
   .main {
-    max-width: 48rem;
+    max-width: 40rem;
     margin: 0 auto;
     padding: 1.5rem 1rem;
     min-height: calc(~"100% - 11.2rem");
