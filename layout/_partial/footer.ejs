@@ -1,9 +1,11 @@
 <footer class="footer">
   <div class="footer-content">
+    <% if(config.footer){ %>
     <div class="copyright">
       ©<%- config.footer.since %> - <%- new Date().getFullYear() %> By <%-
       config.author %>
     </div>
+    <% } %>
     <div class="framework-info">
       <span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a
       ><span class="footer-separator">&nbsp;|&nbsp;</span><span>主题 - </span
