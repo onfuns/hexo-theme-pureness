@@ -73,6 +73,20 @@ h6 {
   font-size: 0.7rem;
 }
 
+hr {
+  margin: 20px 0;
+  height: 2px;
+  border: none;
+  background-color: #ddd;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #fff,
+    #fff 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
 pre,
 code {
   line-height: 1.5;
@@ -105,7 +119,7 @@ blockquote {
   }
 
   .main {
-    max-width: 48rem;
+    max-width: 40rem;
     margin: 0 auto;
     padding: 1.5rem 1rem;
     min-height: calc(~'100vh - 5.4rem');
