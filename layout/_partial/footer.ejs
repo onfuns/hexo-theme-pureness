@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer-content">
     <div class="copyright">
-      ©<%- theme.footer.since %> - <%- new Date().getFullYear() %> By <%-
+      ©<%- config.footer.since %> - <%- new Date().getFullYear() %> By <%-
       config.author %>
     </div>
     <div class="framework-info">
@@ -11,10 +11,10 @@
         ><span>pureness</span></a
       >
     </div>
-    <% if(theme.footer.ICP.text){ %>
+    <% if(config.footer && config.footer.ICP && config.footer.ICP.text){ %>
     <div class="footer_icp">
-      <a href="<%- theme.footer.ICP.url %>" target="_blank"
-        ><%- theme.footer.ICP.text %></a
+      <a href="<%- config.footer.ICP.url %>" target="_blank"
+        ><%- config.footer.ICP.text %></a
       >
     </div>
     <% } %>

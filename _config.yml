@@ -8,13 +8,9 @@ excerpt:
   enable: true
   length: 150
 
-logo:
-
-footer:
-  since: 2015
-  ICP:
-    url: http://www.beian.miit.gov.cn
-    text: 浙ICP备15032255号-1
-
-baidu_analysis: 093ed660ac2dc0f3049615032b6a24e5
-google_analysis:
+toc:
+  enable: true
+  class: toc
+  list_number: false
+  min_depth: 1
+  max_depth: 4

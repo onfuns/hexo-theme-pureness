@@ -1,7 +1,27 @@
 <article class="post-info">
-  <h1 class="post-info-title"><%= page.title %></h1>
-  <%- partial('_partial/post-meta',{ post:page }) %>
-  <div class="post-info-content">
-    <%- page.content %>
+  <div class="post-content">
+    <h1 class="post-info-title"><%= page.title %></h1>
+    <%- partial('_partial/post-meta',{ post:page }) %>
+    <div class="post-info-content"><%- page.content %></div>
   </div>
+  <% if(theme.toc.enable){ %>
+  <div class="post-toc">
+    <div class="post-toc-content">
+      <%- toc(page.content,{ class: theme.toc.class, list_number:
+      theme.toc.list_number ,min_depth: theme.toc.min_depth, max_depth:
+      theme.toc.max_depth }) %>
+    </div>
+  </div>
+  <%}%>
 </article>
+
+<script>
+  document.addEventListener('scroll', function () {
+    var dom = document.querySelector('.post-toc-content')
+    if (window.scrollY > 80) {
+      dom.classList.add('post-toc-fixed')
+    } else {
+      dom.classList.remove('post-toc-fixed')
+    }
+  })
+</script>

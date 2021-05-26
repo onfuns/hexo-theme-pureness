@@ -1,4 +1,8 @@
-@import "var";
+@import 'var';
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -24,8 +28,20 @@ figure,
 code,
 tr,
 td,
+p,
 ul {
   margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
 }
 
 h1,
@@ -35,14 +51,27 @@ h4,
 h5,
 h6 {
   position: relative;
-  margin: 0;
+  margin: 20px 0 10px;
   color: @font-color;
+  font-weight: 500;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.4rem;
 }
-
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 0.9rem;
+}
+h4 {
+  font-size: 0.8rem;
+}
+h5,
+h6 {
+  font-size: 0.7rem;
+}
 
 pre,
 code {
@@ -79,17 +108,21 @@ blockquote {
     max-width: 48rem;
     margin: 0 auto;
     padding: 1.5rem 1rem;
-    min-height: calc(~"100% - 11.2rem");
+    min-height: calc(~'100vh - 5.4rem');
   }
 }
+.highlight,
+.hljs {
+  border-radius: 4px;
+}
 
-@import "_partial/header";
-@import "_partial/post";
-@import "_partial/post-list";
-@import "_partial/archive";
-@import "_partial/category";
-@import "_partial/tag";
-@import "_partial/paginator";
+@import '_partial/header';
+@import '_partial/post';
+@import '_partial/post-list';
+@import '_partial/archive';
+@import '_partial/category';
+@import '_partial/tag';
+@import '_partial/paginator';
 /* @import "plugins/github-gist"; */
-@import "plugins/atom-one-dark";
-@import "_partial/footer";
+@import 'plugins/atom-one-dark';
+@import '_partial/footer';
