@@ -36,12 +36,12 @@ ul {
 
 ul,
 ol {
-  padding-left: 20px;
-  margin: 10px 0;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
 }
 
 p {
-  margin: 10px 0;
+  margin: 0.5rem 0;
 }
 
 h1,
@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
   position: relative;
-  margin: 20px 0 10px;
+  margin: 1rem 0 0.5rem;
   color: @font-color;
   font-weight: 500;
 }
@@ -74,8 +74,8 @@ h6 {
 }
 
 hr {
-  margin: 20px 0;
-  height: 2px;
+  margin: 1rem 0;
+  height: 0.1rem;
   border: none;
   background-color: #ddd;
   background-image: repeating-linear-gradient(
@@ -119,10 +119,10 @@ blockquote {
   }
 
   .main {
-    max-width: 40rem;
+    max-width: 50rem;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
-    min-height: calc(~'100vh - 5.4rem');
+    padding: 1.5rem 0;
+    min-height: calc(~'100vh - 4.4rem');
   }
 }
 .highlight,
@@ -140,3 +140,4 @@ blockquote {
 /* @import "plugins/github-gist"; */
 @import 'plugins/atom-one-dark';
 @import '_partial/footer';
+@import './mobile';

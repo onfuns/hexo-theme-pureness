@@ -4,15 +4,13 @@
     <%- partial('_partial/post-meta',{ post:page }) %>
     <div class="post-info-content"><%- page.content %></div>
   </div>
-  <% if(theme.toc.enable){ %>
+  <% if(theme.toc.enable){ var tcContent = toc(page.content,{ class:
+  theme.toc.class, list_number: theme.toc.list_number ,min_depth:
+  theme.toc.min_depth, max_depth: theme.toc.max_depth }); if(tcContent){ %>
   <div class="post-toc">
-    <div class="post-toc-content">
-      <%- toc(page.content,{ class: theme.toc.class, list_number:
-      theme.toc.list_number ,min_depth: theme.toc.min_depth, max_depth:
-      theme.toc.max_depth }) %>
-    </div>
+    <div class="post-toc-content"><%- tcContent %></div>
   </div>
-  <%}%>
+  <%}}%>
 </article>
 
 <script>
